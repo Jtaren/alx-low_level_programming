@@ -5,6 +5,7 @@
  *
  * Return: Always 0.
  */
+void times_table(void)
 {
 	int x, y, z, u, d;
 
@@ -33,6 +34,6 @@
 	_putchar(z + '0');
 	}
 	}
-	_putchar('/n');
+	_putchar('\n');
 	}
 }
