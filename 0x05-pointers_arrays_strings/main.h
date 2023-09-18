@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int _putchat(char C);
+int _putchar(char C);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
