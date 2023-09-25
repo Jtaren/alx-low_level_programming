@@ -18,24 +18,11 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				n++;
 				break;
-		}
+			}
 			else if (accept[r + 1] == '\0')
 				return (0);
 		}
-		while (*s)
-		{
-			for (r = 0; accept[r]; r++)
-			{
-				if (*s == accept[r])
-				{
-					n++;
-					break;
-				}
-				else if (accept[r + 1] == '\0')
-					return (0);
-			}
-			s++;
-		}
-		return (0);
+		s++;
 	}
+	return (n);
 }
