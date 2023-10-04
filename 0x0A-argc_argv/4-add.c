@@ -12,30 +12,31 @@
 
 int main(int argc, char *argv[])
 {
-	/*Declaring variables*/
-	int count;
-	int str_to_int;
-	int sum = 0;
+	int i;
+	unsigned int k, sum = 0;
+	char *e;
 
-	count = 1;
-	while (count < argc) /*Goes through the whole array*/
+	if (argc > 1)
 	{
-		if (check_num(argv[count]))
+		for (i = 1; i < argc; i++)
 		{
-			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
-			sum += str_to_int;
+			e = argv[i];
+			for (k = 0; k < strlen(e); k++)
+			{
+				if (e[k] < 48 || e[k] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			sum += atoi(e);
+			e++;
 		}
-
-		/*Condition if one of the number contains symbols that are not digits*/
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-		count++;
+		printf("%d\n", sum);
 	}
-	printf("%d\n", sum); /*print sum*/
-
+	else
+	{
+		printf("0\n");
+	}
 	return (0);
 }
-
