@@ -3,10 +3,9 @@
 
 /**
  * struct dog - initializes a variable of type struct dog
- * @d: pointer to struct dog to initialize
- * @name: name to initialize
- * @age: age to initialize
- * @owner: owner to initialize
+ * @name: name of the dog
+ * @age: age of dog
+ * @owner: owner of dog
  */
 struct dog
 {
@@ -14,9 +13,7 @@ struct dog
 	float age;
 	char *owner;
 };
-/**
- * dog_t - typeof for struct dog
- */
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 typedef struct dog dog_t;
