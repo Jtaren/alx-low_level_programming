@@ -1,6 +1,9 @@
 #ifndef LIST_H
 #define LIST_H
 
+#include <stdio.h>
+#include <stdlib>
+
 /**
  * struct listint_t - self referential struct
  * for creating nodes of a singly linked list
@@ -8,7 +11,7 @@
  * @n: integer data
  * @next: self referential pointer
  * pointer to the next node of a list
- */
+ *i/
 
 typedef struct listint_s
 {
