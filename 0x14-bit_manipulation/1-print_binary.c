@@ -19,7 +19,7 @@ unsigned long int _pow(unsigned int base, unsigned int power)
 }
 
 /**
- * print_bunary - prints a number in buinary notation
+ * print_binary - prints a number in buinary notation
  * @n: number to print
  *
  * Return: void
