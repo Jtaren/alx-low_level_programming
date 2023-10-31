@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 		n_read = read(src, buffer, sizeof(buffer));
 		if (n_read == -1)
 			check_IO_stat(-1, -1, argv[1], 'o');
+		wrote = write(dest, buffer, n_read);
 		if (wrote == -1)
 			check_IO_stat(-1, -1, argv[2], 'w');
 	}
