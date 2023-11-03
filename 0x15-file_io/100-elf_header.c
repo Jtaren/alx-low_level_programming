@@ -69,7 +69,7 @@ void print_magic(unsigned char *e_ident)
 
 /**
  * print_data - Prints the data of an ELF header.
- * @c_ident: A pointer to an array containing the ELF class.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_data(unsigned char *e_ident)
 {
@@ -158,7 +158,6 @@ void print_osabi(unsigned char *e_ident)
 
 /**
  * print_abi - Prints the type of an ELF header.
- * @e_type: The ELF type.
  * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_abi(unsigned char *e_ident)
