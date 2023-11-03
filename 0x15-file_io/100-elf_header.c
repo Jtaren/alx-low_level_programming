@@ -77,17 +77,17 @@ void print_data(unsigned char *e_ident)
 
 	switch (e_ident[EI_DATA])
 	{
-	case ELFDATANONE:
-	       printf("none\n");
-	       break;
-	case ELFDATA2LSB:
-	       printf("2's conplement, little endian\n");
-	       break;
-	case ELFDATA2MSB:
-	       printf("2's complement, big endian\n");
-	       break;
-	default:
-	       printf("<unknown: %X>\n", e_ident[EI_CLASS]);
+		case ELFDATANONE:
+			printf("none\n");
+			break;
+		case ELFDATA2LSB:
+			printf("2's conplement, little endian\n");
+			break;
+		case ELFDATA2MSB:
+			printf("2's complement, big endian\n");
+			break;
+		default:
+			printf("<unknown: %X>\n", e_ident[EI_CLASS]);
 	}
 }
 
@@ -143,7 +143,7 @@ void print_osabi(unsigned char *e_ident)
 		printf("UNIX - FreeBSD\n");
 		break;
 	case ELFOSABI_TRU64:
-	        printf("UNIX - TRU64\n");
+		printf("UNIX - TRU64\n");
 		break;
 	case ELFOSABI_ARM:
 		printf("ARM\n");
