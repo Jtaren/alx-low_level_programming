@@ -1,1 +1,1 @@
-0x1E. C - Search Algorithms
+Solutions: 0x1E. C - Search Algorithms
